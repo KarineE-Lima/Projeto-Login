@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*Mobile First*/
+
+:root {
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body, html{
+    position: relative;
+    height: 100vh;
+    background-color: var(--cor2);
+}
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.397);
+}
+div#imagem{
+    background-image: url("../imagem/metal.jpg");
+    background-position: left center;
+    background-size: cover;
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+}
+div#formulario{
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0px 0px 15px 15px;
+}
+div> h1{
+    padding: 10px;
+}
+p{
+    margin-bottom: 10px;
+}
+p.login > label{
+    color: white;
+    padding-top: 20px;
+    padding-right: 10px;
+    vertical-align: center;
+    cursor: text;
+}
+span{
+    display: block;
+    transform: translate(8px,6px);
+}
+p.login{
+    background-color: var(--cor2);
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+input{
+    padding: 8px;
+    border-radius: 8px;
+    border: 3px solid var(--cor2);
+}
+input#entrar{
+    width: 250px;
+    border: 2px solid var(--cor1);
+    background-color: var(--cor1);
+    color: white;
+    cursor: pointer;
+}
+input#entrar:hover{
+    background-color: white;
+    color: var(--cor1);
+}
+input#esqsenha{
+    width: 250px;
+    border: 2px solid var(--cor1);
+    color: var(--cor1);
+    cursor: pointer;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 24
+}
