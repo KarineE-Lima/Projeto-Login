@@ -20,14 +20,15 @@ body, html{
     background-color: var(--cor2);
 }
 main {
-    position: relative;
     height: 100vh;
     width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 section#login{
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    
     overflow: hidden; /* tudo o que estiver fora da borda vai ficar escondido*/
 
     width: 300px;
@@ -36,7 +37,7 @@ section#login{
     border-radius: 20px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.397);
 
-    transform: translate(-50%, -50%);
+    
     transition: width 0.4s, height 0.4s; /* vai ter uma transição na mudança de largura*/
     transition-timing-function: ease; /* a trasição/ animação vai ficar mais leve*/
     
@@ -86,7 +87,7 @@ div.campo > input{
     height: 100%;
     border: 0px;
     border-radius: 5px;
-    transform: translateY(-13px); /*verticalmente*/
+    transform: translateY(-14px); /*verticalmente*/
 }
 div.campo > input:focus-within{
     background-color: white;
